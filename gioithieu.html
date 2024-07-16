@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Giới thiệu - Điện Thoại Của Tôi</title>
+    <link rel="shortcut icon" href="img/favicon.ico" />
+
+    <!-- Load font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        crossorigin="anonymous">
+
+    <!-- Load custom styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/topnav.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/taikhoan.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/gioithieu.css">
+
+    <!-- Load JavaScript -->
+    <script src="data/products.js"></script>
+    <script src="js/dungchung.js"></script>
+    <script>
+        window.onload = function () {
+            khoiTao();
+            // Thêm từ khóa vào khung tìm kiếm
+            var tags = ["Samsung", "iPhone", "Huawei", "Oppo", "Mobi"];
+            for (var t of tags) addTags(t, "index.html?search=" + t);
+        }
+    </script>
+</head>
+
+<body>
+    <script>
+        addTopNav();
+    </script>
+
+    <section class="content">
+        <script>
+            addHeader();
+        </script>
+
+        <div class="page-gt">
+            <h4 class="page-header">
+                Giới thiệu
+            </h4>
+            <div class="page-info">
+                <p>Công ty TNHH Thương Mại và Dịch Vụ Kỹ Thuật DIỆU PHÚC - GPĐKKD: 0316172372 cấp tại Sở KH & ĐT TP. HCM. Địa chỉ văn phòng: 350-352 Võ Văn Kiệt, Phường Cô Giang, Quận 1, Thành phố Hồ Chí Minh, Việt Nam. Điện thoại: 028.7108.9666.
+                </p>
+                <p>
+                    Công ty Cổ phần Đầu tư Thế Giới Di Động (MWG) là nền tảng bán lẻ đa ngành nghề số 1 Việt Nam về doanh thu và lợi nhuận.
+                    Với chiến lược omni-channel, Công ty vận hành mạng lưới hàng ngàn cửa hàng trên toàn quốc song song với việc tận dụng hiểu biết sâu rộng về khách hàng thông qua nền tảng dữ liệu lớn, năng lực chủ động triển khai các hoạt động hỗ trợ bán lẻ được xây dựng nội bộ và liên tục đổi mới công nghệ nhằm tạo ra trải nghiệm khách hàng vượt trội và thống nhất ở mọi kênh cũng như nâng cao sự gắn kết của người tiêu dùng với các thương hiệu của MWG
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        addContainTaiKhoan();
+    </script>
+
+    <div class="footer">
+        <script>
+            addFooter();
+        </script>
+    </div>
+
+    <i class="fa fa-arrow-up" id="goto-top-page" onclick="gotoTop()"></i>
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tin tức - Xoay Quanh SmartPhone</title>
+    <link rel="shortcut icon" href="img/favicon.ico" />
+
+    <!-- Load font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        crossorigin="anonymous">
+
+    <!-- our files -->
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/topnav.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/taikhoan.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/tintuc.css">
+
+    <!-- js -->
+    <script src="data/products.js"></script>
+	<script src="js/dungchung.js"></script>
+    <script>
+        window.onload = function () {
+            khoiTao();
+            // thêm tags (từ khóa) vào khung tìm kiếm
+            var tags = ["Samsung", "iPhone", "Huawei", "Oppo", "Mobi"];
+            for (var t of tags) addTags(t, "index.html?search=" + t);
+        }
+    </script>
+
+</head>
+
+<body>
+    <script> addTopNav();</script>
+
+    <section style="min-height: 85vh">
+        <script> addHeader(); </script>
+
+        <div class="body-tintuc">
+            <div class="tintuc-info">
+                <a href="https://vatvostudio.vn/ios-18-public-beta-chinh-thuc-ra-mat-day-la-cac-tinh-nang-moi-ma-ban-can-biet/" target="_blank">
+                    <img src="img/tintuc/tintuc1.jpg">
+                    <h2>iOS 18 Public Beta chính thức ra mắt: Đây là các tính năng mới mà bạn cần biết</h2>
+                </a>
+                <br/>
+                <h5>IOS &emsp;1 giờ</h5>
+            </div>
+            <div class="tintuc-info">
+                <a href="https://vatvostudio.vn/hai-ngay-dung-pin-galaxy-z-fold6/" target="_blank">
+                    <img src="img/tintuc/tintuc2.jpg">
+                    <h2>Hai ngày dùng pin Galaxy Z Fold6: Vẫn là pin 4400mAh nhưng dùng vẫn ngon!</h2>
+                </a>
+                <br/>
+                <h5>SamSung &emsp; 3 giờ</h5>
+            </div>
+            <div class="tintuc-info">
+                <a href="https://vatvostudio.vn/chiem-nguong-galaxy-z-flip6-phien-ban-doraemon-thiet-ke-cuc-dep-gia-hon-34-trieu-dong-nhung-muon-mua-rat-kho/" target="_blank">
+                    <img src="img/tintuc/tintuc3.jpg">
+                    <h2>Chiêm ngưỡng Galaxy Z Flip6 phiên bản Doraemon: Thiết kế cực đẹp, giá hơn 34 triệu đồng, nhưng muốn mua rất khó</h2>
+                </a>
+                <br/>
+                <h5>SamSung &emsp; 6 giờ</h5>
+            </div>
+            <div class="tintuc-info">
+                <a href="https://vatvostudio.vn/danh-gia-dimensity-7300-energy-tren-oppo-reno12/" target="_blank">
+                    <img src="img/tintuc/tintuc4.jpg">
+                    <h2>Đánh giá Dimensity 7300-Energy trên OPPO Reno12: chip “Energy” thì chơi game có ngon?</h2>
+                </a>
+                <br/>
+                <h5>OPPO &emsp; 15 giờ</h5>
+            </div>
+            <div class="tintuc-info" style="border-bottom: 0;">
+                <a href="https://vatvostudio.vn/honor-magic-v3-ra-mat-dien-thoai-gap-mong-nhat-the-gioi-chay-snapdragon-8-gen-3-gia-chi-hon-31-trieu-dong/" target="_blank">
+                    <img src="img/tintuc/tintuc5.jpg" height="148px" width="224px;">
+                    <h2>HONOR Magic V3 ra mắt: Điện thoại gập mỏng nhất thế giới, chạy Snapdragon 8 Gen 3, giá chỉ hơn 31 triệu đồng</h2>
+                </a>
+                <br/>
+                <h5>HONOR MAGIC V3 &emsp; 20 giờ</h5>
+            </div> 
+
+        </div>
+
+    </section>
+
+    <script> addContainTaiKhoan(); </script>
+
+    <div class="footer">
+        <script>addFooter();</script>
+        
+    </div>
+
+    <i class="fa fa-arrow-up" id="goto-top-page" onclick="gotoTop()"></i>
+
+</body>
+
+</html>

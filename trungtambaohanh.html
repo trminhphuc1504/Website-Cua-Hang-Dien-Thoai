@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trung tâm bảo hành - Điện Thoại Của Tôi</title>
+    <link rel="shortcut icon" href="img/favicon.ico" />
+
+    <!-- Load font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        crossorigin="anonymous">
+
+    <!-- our files -->
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/topnav.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/taikhoan.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/baohanh.css">
+    <!-- js -->
+    <script src="data/products.js"></script>
+	<script src="js/dungchung.js"></script>
+
+    <script>
+        window.onload = function () {
+            khoiTao();
+            // thêm tags (từ khóa) vào khung tìm kiếm
+            var tags = ["Samsung", "iPhone", "Huawei", "Oppo", "Mobi"];
+            for (var t of tags) addTags(t, "index.html?search=" + t);
+        }
+    </script>
+</head>
+
+<body>
+
+    <script>addTopNav();</script>
+
+    <section style="min-height: 85vh">
+        <script>addHeader();</script>
+
+        <table>
+            <tr>
+                <td colspan="4" class="header-table">
+                    <marquee behavior="scroll" direction=left>Các trung tâm bảo hành của Smartphone Store</marquee>
+                </td>
+            </tr>
+            <tr>
+                <th class="col1">STT</th>
+                <th class="col2">Địa chỉ</th>
+                <th class="col3">Điện thoại</th>
+                <th class="col4">Thời gian làm việc</th>
+            </tr>
+
+            <script>
+                var trungtam = [
+                    ["CellphoneS 218-220, Trần Quang Khải, Phường Tân Định – Tp. Hồ Chí Minh , Quận 1"       , "02871000218" , "8h00 - 22h00 (tất cả các ngày trong tuần)"],
+                    [" CellphoneS 55B Trần Quang Khải, P. Tân Định, Q. 1"    , "02871083355"     , "8h00 - 22h00 (tất cả các ngày trong tuần)"],
+                    ["CellphoneS 114 Phan Đăng Lưu, P. 3, Q. Phú Nhuận"                 , "02871097020"  , "8h00 - 22h00 (tất cả các ngày trong tuần)"],
+                    ["CellphoneS 157-159 Nguyễn Thị Minh Khai, P. Phạm Ngũ Lão, Q. 1"                      , "02871066159"      , "8h00 - 22h00 (tất cả các ngày trong tuần)"],
+                    ["CellphoneS 134 Nguyễn Thái Học, P. Phạm Ngũ Lão, Q.1, TP HCM"           , "02871000132"  , "8h00 - 22h00 (tất cả các ngày trong tuần)"],
+                    ["CellphoneS 288 Đường 3/2, P. 12, Q. 10"           , "02871066288" , "8h00 - 22h00 (tất cả các ngày trong tuần)"],
+                    ["CellphoneS 377-379 Điện Biên Phủ, P. 25, Q. Bình Thạnh"                      , "02871077377" , "8h00 - 22h00 (tất cả các ngày trong tuần)"],
+                    ["CellphoneS 567 Lê Quang Định, Phường 1, Q. Gò Vấp"           , "02871000567"  , "8h00 - 22h00 (tất cả các ngày trong tuần)"],
+                    ["CellphoneS 190B Hoàng Văn Thụ, P4, Quận Tân Bình"     , "02871000190"  , "8h00 - 22h00 (tất cả các ngày trong tuần)"],
+                    ["CellphoneS 536 Xô Viết Nghệ Tĩnh, P. 25, Q. Bình Thạnh"        , "02871065536"  , "8h00 - 22h00 (tất cả các ngày trong tuần)"],
+                    ["CellphoneS 347 Nguyễn Tri Phương, Phường 5, Quận 10, TP. HCM"         , "02871000347"  , "8h00 - 22h00 (tất cả các ngày trong tuần)"],
+                    ["CellphoneS 177 Khánh Hội, P. 3, Q. 4" , "02871067171"    , "8h00 - 22h00 (tất cả các ngày trong tuần)"],
+                    ["CellphoneS 59 Quang Trung, P. 10, Q. Gò Vấp"      , "02871088059" , "8h00 - 22h00 (tất cả các ngày trong tuần)"],
+                    ["CellphoneS 457B Lê Đại Hành, P.11, Quận 11" , "02871000457"      , "8h00 - 22h00 (tất cả các ngày trong tuần)"],
+                    ["CellphoneS 139 Trần Não, P. Bình An, Quận 2 "       , "02871000139"  , "8h00 - 22h00 (tất cả các ngày trong tuần)"]
+                ]
+
+                for (var i = 0; i < trungtam.length; i++) {
+                    var link = 'https://maps.google.com/maps?q=' + trungtam[i][0];
+                    document.write(`
+                        <tr>
+                            <td class="col1">` + (i + 1) + `</td>
+                            <td class="col2"> 
+                                <a href="`+link+`" target="_blank" title="Xem bản đồ">
+                                    ` + trungtam[i][0] +`
+                                </a>
+                            </td>
+                            <td class="col3">` + trungtam[i][1] +`</td>
+                            <td class="col4">` + trungtam[i][2] +`</td>
+                        </tr>
+                    `)
+                }
+            </script>
+        </table>
+
+    </section>
+
+    <script>addContainTaiKhoan(); </script>
+
+    <div class="footer">
+            <script>addFooter();</script>
+    </div>
+
+    <i class="fa fa-arrow-up" id="goto-top-page" onclick="gotoTop()"></i>
+
+</body>
+
+</html>
